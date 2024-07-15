@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPIK | 사진 보정앱</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/epik_logo.svg" type="image/x-icon">
+    <link rel="icon" href="./images/epik_logo.svg" type="image/x-icon">
+    <!-- 웹글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- 디자인css -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <main><!-- 12 group 묶음 -->
+        <!-- =============== 1. 표지 =============== -->
+        <div class="bg bg1">
+            <section class="bg1_1">
+                <h1><a href="#"><img src="./images/epik_logo.svg" alt="epik"></a></h1>
+                <h2><em>AI 필터의 혁신</em>과 <em>자연스러움</em>이 만나는 곳,<br>당신의 사진을 더 아름답게</h2>
+            </section>
+            <div class="main_img"><img src="./images/epik_main.png" alt="epik"></div>
+            <section class="bg1_2">
+                <h2>지금 바로 <strong>EPIK</strong>으로<br>사진을 더욱 풍부하게 보정해보세요!</h2>
+                <div class="btn">
+                    <a href="#" class="tutorial_btn">에픽 튜토리얼 링크</a>
+                    <a href="#" class="download_btn">다운로드 하러 가기</a>
+                </div>
+            </section>
+        </div>
+        <!-- =============== 2. 퀴즈 =============== -->
+        <div class="bg bg2">
+            <section>
+                <div class="event_time">
+                    <h1><span>QUIZ</span></h1>
+                    <h2>퀴즈 풀고 EPIK에서 사용할 수 있는<br>쿠폰을 받아보세요!</h2>
+                    <h3>퀴즈 종료까지</h3>
+                    <div class="limit_time">
+                        <div class="count">
+                            <span>00</span>:<span>07</span>:<span>36</span>
+                        </div>
+                        <div class="date">
+                            <p>DAYS</p>
+                            <p>HOURS</p>
+                            <p>MINS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event_quiz">
+                    <h2>Q. EPIK에서 새로 출시한 AI 필터는?</h2>
+                    <form action="#" method="get" id="quiz_frm">
+                        <fieldset class="quiz_radio">
+                            <legend class="skip">퀴즈 양식</legend>
+                            <ul>
+                                <li>
+                                    <label for="christmas"><img src="./images/ai_christmas.png" alt=""></label>
+                                    <span class="check">
+                                        <input type="radio" name="ai" value="christmas" id="christmas">
+                                        <label for="christmas">AI 크리스마스</label>
+                                    </span>
+                                </li>
+                                <li>
+                                    <label for="yearbook"><img src="./images/ai_yearbook.png" alt=""></label>
+                                    <span class="check">
+                                        <input type="radio" name="ai" value="yearbook" id="yearbook">
+                                        <label for="yearbook">AI 이어북</label>
+                                    </span>
+                                </li>
+                                <li>
+                                    <label for="avata"><img src="./images/ai_avata.png" alt=""></label>
+                                    <span class="check">
+                                        <input type="radio" name="ai" value="avata" id="avata">
+                                        <label for="avata">AI 아바타</label>
+                                    </span>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <div class="btn">
+                            <button type="button">정답 확인하기</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="event_coupon">
+                    <h2><em>EPIK</em><span class="pro">Pro</span>에서만 경험할 수 있는<br>서비스를 지금 바로 시작해보세요!</h2>
+                    <ul class="coupon_wrap">
+                        <li>
+                            <a href="#" class="download"><img src="./images/download.svg" alt=""></a>
+                            <h3>COUPON</h3>
+                            <div class="coupon_contents"><em>EPIK</em><span class="pro">Pro</span>1개월 무료</div>
+                            <p><del>월 5,500원</del><span>0원</span></p>
+                        </li>
+                        <li>
+                            <a href="#" class="download"><img src="./images/download.svg" alt=""></a>
+                            <h3>COUPON</h3>
+                            <div class="coupon_contents"><em>AI 아바타</em>1회 무료</div>
+                            <p><del>1회 4,400원</del><span>0원</span></p>
+                        </li>
+                    </ul>
+                    <p>* 앱 내에서만 적용가능한 쿠폰입니다. 자세한 내용은 EPIK 앱 공지사항을 확인하세요.</p>
+                </div>
+            </section>
+        </div>
+        <!-- =============== 3. 배너 =============== -->
+        <div class="bg bg3"></div>
+        <!-- =============== 4. 터치보정(영상) =============== -->
+        <div class="bg bg4">
+            <section>
+                <h2><strong>휘어지는 굴곡 없이</strong> 자연스러운 보정으로<br>완벽한 모습을 연출해보세요!</h2>
+                <div class="touch">
+                    <iframe class="video" width="440" height="782" src="https://www.youtube.com/embed/odc8MTAllkk?autoplay=1&mute=1&loop=1" title="요즘 난리난 보정어플 #epik #사진편집 #튜토리얼" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="touch_right">
+                        <h3><em class="pink_highlight">터치보정</em>으로 세밀한 보정!<br><em class="pink_highlight">복구툴</em>로 휘어진 배경 되돌리기!</h3>
+                        <ul class="bf_af">
+                            <li class="bf">
+                                <img src="./images/touch_bf.jpg" alt="터치보정">
+                                <img src="./images/touch_bf_icon.png" alt="터치보정버튼">
+                            </li>
+                            <li class="bf_to_af"><img src="./images/tripple_arrow_right.svg" alt=""></li>
+                            <li class="af">
+                                <img src="./images/touch_af.jpg" alt="복구">
+                                <img src="./images/touch_af_icon.png" alt="복구버튼">
+                            </li>
+                        </ul>
+                        <div class="more_link">
+                            <span>더 많은 보정 영상이 궁금하다면?</span>
+                            <button type="button">에픽 영상 보러가기</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- =============== 5. Pick1 =============== -->
+        <div class="bg bg5">
+            <section>
+                <h2 class="pick_title"><strong>EPIK</strong>'s PICK 1</h2>
+                <p class="pick_contents">사진만 넣으면 완성되는 편한 <em>템플릿 기능</em>,<br>에픽이 선정한 <em>다양한 템플릿</em>들을 지금 만나보세요!</p>
+            </section>
+            <ul class="item_wrap">
+                <li class="item item1"><img src="./images/photo_1.jpg" alt=""></li>
+                <li class="item item2"><img src="./images/photo_2.jpg" alt=""></li>
+                <li class="item item3"><img src="./images/photo_3.jpg" alt=""></li>
+                <li class="item item4">
+                    <p><img src="./images/photo_4.jpg" alt=""></p>
+                    <div class="item_contents">
+                        <p>antique object</p>
+                        <p class="epik_account">Epik_official</p>
+                    </div>
+                </li>
+                <li class="item item5"><img src="./images/photo_5.jpg" alt=""></li>
+                <li class="item item6"><img src="./images/photo_6.jpg" alt=""></li>
+                <li class="item item7"><img src="./images/photo_7.jpg" alt=""></li>
+            </ul>
+        </div>
+        <!-- =============== 6. Pick2 =============== -->
+        <div class="bg bg6">
+            <section>
+                <h2 class="pick_title"><strong>EPIK</strong>'s PICK 2</h2>
+                <p class="pick_contents">커플, 계절, 감성까지, Epik에서 제공하는 다채로운<br><em>배경화면 템플릿</em>을 사용해보세요!</p>
+                <div class="wallpaper wp1">
+                    <p><img src="./images/wallpaper_1.png" alt=""></p>
+                    <div class="wp_info">
+                        <h3><em>1</em><strong>감성 달력 캘린더</strong><span>“Feb aesthetic wallpaper”</span></h3>
+                        <p>계절의 아름다움을 담은 캘린더 배경화면으로<br>일상에 특별함을 더하세요:)</p>
+                    </div>
+                </div>
+                <div class="wallpaper wp2">
+                    <div class="wp_info">
+                        <h3><em>2</em><strong>커플 콜라주 배경화면</strong><br><span>“Fill your heart Wallpaper”</span></h3>
+                        <p>함께하는 시간을 더욱 특별하게 만들어줄,<br>커플을 위한 다채로운 Epik 배경화면 컬렉션.</p>
+                    </div>
+                    <p><img src="./images/wallpaper_2.png" alt=""></p>
+                </div>
+                <div class="wallpaper wp3">
+                    <p><img src="./images/wallpaper_3.png" alt=""></p>
+                    <div class="wp_info">
+                        <h3><em>3</em><strong>무드 콜라주 배경화면</strong><span>“New York Collage lockscreen”</span></h3>
+                        <p>유니크한 느낌을 주는 키치한 콜라주 디자인으로<br>화면에서 다양한 스토리를 보여주세요!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- =============== 7. Pick3 =============== -->
+        <div class="bg bg7">
+            <section>
+                <p><img src="./images/iphone_filter.png" alt=""></p>
+                <div class="right">
+                    <h2 class="pick_title"><strong>EPIK</strong>'s PICK 3</h2>
+                    <p class="pick_contents">사진 속 분위기를 더욱 높여보세요! Epik이<br>제공하는 <em>다양한 필터</em>로 당신의 순간을 더욱 <br>생동감 있게 변화시켜보세요!</p>
+                </div>
+            </section>
+            <div class="filter_img"><img src="./images/all_filter.png" alt=""></div>
+        </div>
+        <!-- =============== 8. 스티커 =============== -->
+        <div class="bg bg8">
+            <section>
+                <div class="img_top">
+                    <img src="./images/sticker_1.png" alt="">
+                    <span class="sticker_logo"><img src="./images/sticker_logo.png" alt=""></span>
+                    <img src="./images/sticker_2.png" alt="">
+                </div>
+                <p class="pick_contents">당신의 사진에 에픽한 변화를 선사하세요!<br>Epik의 <em>다채로운 스티커</em>로 사진을 꾸며보세요!</p>
+                <div class="img_btm">
+                    <img src="./images/sticker_3.png" alt="">
+                    <img src="./images/sticker_4.png" alt="">
+                    <img src="./images/sticker_5.png" alt="">
+                </div>
+            </section>
+        </div>
+        <!-- =============== 9. 모든기능-둘러보기 =============== -->
+        <div class="bg bg9">
+            <section>
+                <h1><img src="./images/epik_logo.svg" alt=""></h1>
+                <p class="pick_contents">이 모든 기능을 한 번에 보고싶다면?<br>EPIK의 <em>둘러보기 페이지</em>에서 확인해보세요!</p>
+                <p><img src="./images/all_function.png" alt=""></p>
+                <div class="sticker_wrap">
+                    <img src="./images/epik_sticker.png" alt="">
+                    <img src="./images/clover_sticker.png" alt="">
+                    <img src="./images/smile_sticker.png" alt="">
+                    <img src="./images/shine_sticker.png" alt="">
+                    <img src="./images/masking1_sticker.png" alt="">
+                    <img src="./images/talk_sticker.png" alt="">
+                    <img src="./images/masking2_sticker.png" alt="">
+                </div>
+            </section>
+        </div>
+        <!-- =============== 10. 이벤트 =============== -->
+        <div class="bg bg10">
+            <section>
+                <div class="event_top">
+                    <h1><span>EVENT</span></h1>
+                    <h2><img src="./images/event_title.png" alt=""></h2>
+                    <p>EPIK에서 <strong>봄 챌린지</strong> 참여하고<br><em>정식 크리에이터</em>가 되어보세요!</p>
+                </div>
+                <div class="spring_wrap">
+                    <img src="./images/insta_1.png" alt="">
+                    <img src="./images/insta_2.png" alt="">
+                    <img src="./images/insta_3.png" alt="">
+                    <img src="./images/insta_4.png" alt="">
+                    <img src="./images/insta_5.png" alt="">
+                </div>
+                <div class="date_winner">
+                    <dl class="event_date">
+                        <dt><span>이벤트 기간</span></dt>
+                        <dd>2024.03.25 (월) ~ 2024.04.14 (일)</dd>
+                    </dl>
+                    <dl class="event_winner">
+                        <dt><span>당첨자 발표</span></dt>
+                        <dd> 2024.04.29 (수)</dd>
+                    </dl>
+                </div>
+                <div class="winner_benefit">
+                    <h3><span>winner 혜택</span></h3>
+                    <div class="benefit_wrap">
+                        <div class="bf">
+                            <div class="bf_left">
+                                <p>혜택 1</p>
+                                <p><em>EPIK</em> <span>PRO</span><br>1년 구독권</p>
+                                <p>당첨자에 한하여 제공되는 쿠폰입니다.</p>
+                            </div>
+                        </div>
+                        <div class="bf">
+                            <div class="bf_right">
+                                <p>혜택 2</p>
+                                <p><em>CREATOR</em> <img src="./images/official_mark.svg" alt=""><br>뱃지 부여</p>
+                                <p>당첨자에 한하여 제공되는 쿠폰입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event_caution">
+                    <h3>이벤트 유의사항</h3>
+                    <p>&middot; EPIK 어플 사용자 대상으로 하는 이벤트입니다.<br>
+                        &middot; 이벤트가 종료되면 더 이상 참여가 불가합니다.<br>
+                        &middot; 당첨자 안내 : 당첨되신 분들은 2024년 6월 29일까지 앱 내 문의하기로 연락해주시기 바랍니다.<br>
+                        &middot; 공지 이후 60일 이내에 별도 연락이 없을 경우, 당첨이 취소될 수 있으니 양해 부탁드립니다.<br>
+                        &middot; 구독권은 ID당 1회 다운로드 가능하며, 사용기간 경과 시 재발급이 불가합니다.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <!-- =============== 11. 마무리(배너) =============== -->
+        <div class="bg bg11"></div>
+    </main>
+    <footer>
+        <section>
+            <div class="f_top">
+                <p>&copy; SNOW Corp.</p>
+                <div class="sns">
+                    <a href="#"><img src="./images/icon_facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="./images/icon_instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="./images/icon_tiktok.svg" alt="tiktok"></a>
+                    <a href="#"><img src="./images/icon_youtube.svg" alt="youtube"></a>
+                </div>
+            </div>
+            <div class="f_bottom">
+                <div class="ad_top">
+                    <a href="#">개인정보 처리방침</a>
+                    <a href="#">기업윤리 센터</a>
+                    <a href="#">공지사항</a>
+                </div>
+                <div class="ad_mid">
+                    <p>회사명 : 스노우 주식회사</p>
+                    <p>주소 : 경기도 성남시 분당구 분당내곡로 131, 판교 테크원타워1 8층</p>
+                    <p>이메일 : <a href="#">dl_snowbusiness@snowcorp.com</a></p>
+                </div>
+                <p class="ad_btm">COPYRIGHT &copy; 2022. SNOW. ALL RIGHT RESERVED.</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

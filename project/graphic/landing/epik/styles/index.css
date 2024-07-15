@@ -1,0 +1,600 @@
+main {text-align:center; margin:0 auto;}
+/* 배경 공통&개별값 */
+main .bg > section {width:1250px; margin:0 auto;}
+main .bg {
+    width:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+main .bg1 {
+    background-image:url(../images/bg1.jpg);
+    height:2000px;
+}
+main .bg3 {
+    background-image:url(../images/bg3.jpg);
+    height:672px;
+}
+
+/* ================== 1. 표지 ================== */
+main .bg1 .bg1_1 {}
+main .bg1 .bg1_1 h1 {padding-top:150px;}
+main .bg1 .bg1_1 h2 {
+    font-size:4.375rem; font-weight:700; color:#fff;
+    line-height:1.3; letter-spacing:0.2px; margin:35px 0 125px;
+}
+main .bg1 .bg1_1 h2 em {font-weight:700; color:#6CF460; }
+main .bg1 .bg1_1 h2 em:nth-child(2) {font-weight:700; color:#806BFB;}
+main .bg1 .main_img {margin:0 auto;}
+main .bg1 .bg1_2 {}
+main .bg1 .bg1_2 h2 {
+    font-size:3.438rem; font-weight:500;
+    line-height:1.2; letter-spacing:-0.2px;
+    margin:90px 0;
+}
+main .bg1 .bg1_2 h2 strong {font-size:4.375rem; font-weight:900;}
+/* 1.표지-버튼 공통 */
+main .bg1 .bg1_2 .btn {
+    width:1062px; margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+main .bg1 .bg1_2 .btn .tutorial_btn,
+main .bg1 .bg1_2 .btn .download_btn,
+main .bg4 section .touch .touch_right .more_link button {
+    font-size:2.5rem; font-weight:700; margin-bottom:150px;
+    padding:25px 55px; border-radius:60px;
+    background:linear-gradient(90deg, #6CF460, #806BFB);
+    transition:transform 0.2s;
+}
+main .bg1 .bg1_2 .btn .tutorial_btn:hover,
+main .bg1 .bg1_2 .btn .download_btn:hover,
+main .bg4 section .touch .touch_right .more_link button:hover {
+    transform:scale(0.97);
+}
+/* 1.표지-버튼 화살표 가상선택자 */
+main .bg1 .bg1_2 .btn .tutorial_btn::after,
+main .bg1 .bg1_2 .btn .download_btn::after,
+main .bg4 section .touch .touch_right .more_link button::after {
+    content:'';
+    background-image:url(../images/arrow.svg);
+    background-repeat:no-repeat;
+    width:26px; height:28px;
+    display:inline-block;
+    margin-left:25px;
+}
+/* ================== 2. 퀴즈 ================== */
+main .bg2 {}
+main .bg2 section {background-color:#191919; border-radius:50px; height:2300px; padding:150px 0;}
+main .bg2 section .event_time {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+main .bg2 section .event_time h1 {
+    font-size:3.75rem; font-weight:700; color:#fff;
+    letter-spacing:-0.2px;
+    width:345px; height:104px; background:linear-gradient(-60deg, #FF3A64, #6CF460);
+    border-radius:90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+main .bg2 section .event_time h1 span {position:relative; bottom:5px;}
+/* event 제목 양옆 데코 가상선택자 */
+main .bg2 section .event_time h1::before {
+    content:'';
+    background-image:url(../images/shine_deco.svg);
+    background-repeat:no-repeat;
+    width:35px; height:35px;
+    margin-right:15px;
+}
+main .bg2 section .event_time h1::after {
+    content:'';
+    background-image:url(../images/shine_deco.svg);
+    background-repeat:no-repeat;
+    width:35px; height:35px;
+    margin-left:15px;
+}
+main .bg2 section .event_time h2 {
+    font-size:3.438rem; font-weight:500; color:#fff;
+    line-height:1.3; letter-spacing:0.2px;
+    margin:80px 0 66px;
+}
+/* 2.퀴즈 - 제한시간  */
+main .bg2 section .event_time h3 {
+    font-size:1.625rem; color:#FF3A64;
+}
+main .bg2 section .event_time .limit_time {
+    margin:40px 0 135px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+main .bg2 section .event_time .limit_time .count {
+    font-size:3.438rem; font-weight:500; letter-spacing:-0.2px; color:#636363;
+}
+main .bg2 section .event_time .limit_time .count span {
+    color:#fff; margin:0 31px;
+    width:130px; line-height:120px; background-color:#000;border-radius:20px;
+    display:inline-block;
+}
+main .bg2 section .event_time .limit_time .date {
+    width:511px;
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+main .bg2 section .event_time .limit_time .date p {
+    font-size:2.5rem; font-weight:200; color:#636363;
+}
+/* 2.퀴즈 - checkbox  */
+main .bg2 section .event_quiz {}
+main .bg2 section .event_quiz h2 {color:#fff; font-size:2.5rem;}
+main .bg2 section .event_quiz #quiz_frm {}
+main .bg2 section .event_quiz #quiz_frm .quiz_radio {}
+main .bg2 section .event_quiz #quiz_frm .quiz_radio ul {
+    padding:0 106px; margin:50px 0 44px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main .bg2 section .event_quiz #quiz_frm .quiz_radio ul li {
+    display:flex;
+    flex-flow:column nowrap;
+}
+main .bg2 section .event_quiz #quiz_frm .quiz_radio ul li > label {
+    margin-bottom:20px;
+}
+main .bg2 section .event_quiz #quiz_frm .quiz_radio ul li .check {
+    height:25px;
+    display:flex;
+    justify-content:center;
+}
+main .bg2 section .event_quiz #quiz_frm .quiz_radio ul li img:hover {
+    
+}
+/* 2.퀴즈 - 기존 radio 제거 */
+main .bg2 section .event_quiz #quiz_frm .quiz_radio ul li .check input[name=ai] {display:none;}
+/* 2.퀴즈 - radio 활성화 시 */
+main .bg2 section .event_quiz #quiz_frm .quiz_radio ul li .check input[name=ai]:checked+label {background-image:url(../images/checked_epik.svg);}
+/* 2.퀴즈 - radio 비활성화(기본) */
+main .bg2 section .event_quiz #quiz_frm .quiz_radio ul li .check label {
+    background-image:url(../images/unchecked_epik.svg);
+    background-repeat:no-repeat;
+    padding-left:50px;
+    font-size:1.25rem; color:#fff;
+}
+main .bg2 section .event_quiz #quiz_frm .btn {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* 정답확인하기 버튼 */
+main .bg2 section .event_quiz #quiz_frm .btn button {
+    padding:16px 40px;
+    border:4px solid #FF3A64; border-radius:60px;
+    font-size:1.625rem; color:#FF3A64;
+    background-color:#191919;
+}
+/* 정답확인하기 버튼 활성화 */
+main .bg2 section .event_quiz #quiz_frm .btn button:hover {
+    background-color:rgba(255,255,255,0.05);
+    
+}
+main .bg2 section .event_quiz #quiz_frm .btn button::after {
+    content:'';
+    background-image:url(../images/double_arrow_right.svg);
+    background-repeat:no-repeat;
+    width:24px; height:24px;
+    display:inline-block;
+    margin-left:12px;
+}
+/* 2. 퀴즈 : 쿠폰 */
+main .bg2 section .event_coupon {}
+main .bg2 section .event_coupon h2 {
+    font-size:2.5rem; color:#fff; line-height:1.5;
+    margin:175px 0 159px;
+}
+main .bg2 section .event_coupon h2 em {
+    font-size:3.125rem; font-weight:700; letter-spacing:-0.2px;
+    position:relative; top:3px;
+}
+/* pro 글씨 개별 디자인 모음 */
+main .bg2 section .event_coupon h2 .pro {
+    background:linear-gradient(-60deg, #806BFB, #6CF460);
+    font-size:1.563rem; font-weight:700; letter-spacing:-0.4px;
+    width:98px; line-height:46px; border-radius:48px; padding-bottom:2px;
+    margin:0 16px 0 10px;
+    display:inline-block;
+    position:relative; bottom:5px;
+}
+main .bg2 section .event_coupon .coupon_wrap li .coupon_contents .pro {
+    background:linear-gradient(-60deg, #806BFB, #6CF460);
+    font-size:1.563rem; font-weight:700; letter-spacing:-0.4px;
+    width:98px; line-height:46px; border-radius:48px;
+    color:#fff; display:flex; justify-content:center; align-items:center;
+    margin-right:10px; padding-bottom:2px;
+}
+main .bg2 section .event_coupon h2 .pro::before,
+main .bg2 section .event_coupon .coupon_wrap li .coupon_contents .pro::before {
+    content:'';
+    background-image:url(../images/pro_shine.svg);
+    background-repeat:no-repeat;
+    width:18px; height:18px;
+    display:inline-block;
+    margin-right:5px;
+}
+/* e: pro 글씨 개별 디자인 모음 */
+main .bg2 section .event_coupon .coupon_wrap {
+    margin:0 auto; width:1068px;
+    display:flex;
+    justify-content:space-between;
+}
+main .bg2 section .event_coupon .coupon_wrap li {
+    width:504px; height:231px;
+    background-image:url(../images/coupon_bg.svg);
+    padding:35px; text-align:left;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+    align-items:flex-start;
+    position:relative;
+}
+/* 쿠폰 상단 다운로드 버튼 */
+main .bg2 section .event_coupon .coupon_wrap li .download {
+    background-color:#fff; padding:26.88px 29.57px; border-radius:50px; 
+    filter:drop-shadow(0 0 8px rgba(0,0,0,0.2));
+    position:absolute; right:30px; top:-51px;
+} 
+/* 쿠폰 상단 다운로드 버튼 활성화 */
+main .bg2 section .event_coupon .coupon_wrap li .download:hover {
+    background-color:#FFDFE6;
+
+}
+main .bg2 section .event_coupon .coupon_wrap li h3 {font-size:1.625rem; font-weight:500; color:#FF3A64;}
+main .bg2 section .event_coupon .coupon_wrap li .coupon_contents {
+    font-size:2.5rem; font-weight:500; letter-spacing:-0.2px;
+    display:flex;
+    align-items:center;
+}
+main .bg2 section .event_coupon .coupon_wrap li .coupon_contents em {font-size:3.125rem; font-weight:700; letter-spacing:-0.2px; margin-right:10px;}
+main .bg2 section .event_coupon .coupon_wrap li .coupon_contents .pro {}
+main .bg2 section .event_coupon .coupon_wrap li p {font-size:1.625rem; font-weight:500; color:#191919;}
+main .bg2 section .event_coupon .coupon_wrap li p del {font-size:1.25rem; color:#636363; margin-right:14px;}
+main .bg2 section .event_coupon > p {font-size:1.25rem; color:#636363; margin-top:60px;}
+/* ================== 3. 배너 ================== */
+main .bg3 {background-size:auto;}
+/* ================== 4. 터치보정(영상) ================== */
+main .bg4 {background-color:#191919; padding:150px 0;}
+main .bg4 section {}
+main .bg4 section h2 {font-size:3.125rem; letter-spacing:-0.2px; line-height:1.3; color:#fff; margin-bottom:100px;}
+main .bg4 section h2 strong {font-weight:700;}
+main .bg4 section .touch {
+    width:100%;
+    display:flex; justify-content:space-between; align-items:center;
+}
+main .bg4 section .touch .video {width:415px;}
+main .bg4 section .touch .touch_right {}
+main .bg4 section .touch .touch_right h3 {font-size:1.625rem; line-height:1.5; color:#fff;}
+main .bg4 section .touch .touch_right h3 .pink_highlight {font-weight:700; color:#FF3A64;}
+main .bg4 section .touch .touch_right .bf_af {
+    display:flex; position:relative;
+    margin:40px 0 78px;
+}
+main .bg4 section .touch .touch_right .bf_af .bf_to_af {
+    position:absolute; left:279px; top:160px;
+}
+main .bg4 section .touch .touch_right .bf_af img:last-child {
+    width:64px; height:78px;
+    margin-top:-39px;
+}
+main .bg4 section .touch .touch_right .bf_af .bf, 
+main .bg4 section .touch .touch_right .bf_af .af {
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+main .bg4 section .touch .touch_right .bf_af .af {
+    margin-left:43px;
+}
+main .bg4 section .touch .touch_right .more_link {
+    display:flex; flex-flow:column nowrap; justify-content:center; align-items:center;
+}
+main .bg4 section .touch .touch_right .more_link span {font-size:1.25rem; font-weight:200; color:#e0e0e0;}
+/* 영상보러가기 버튼 디자인 */
+main .bg4 section .touch .touch_right .more_link button {
+    border:0; margin-top:30px; margin-bottom:0;
+}
+/* ================== 5. Pick1 ================== */
+main .bg5 {
+    background-image:url(../images/bg5.jpg);
+    padding:150px;
+}
+main .bg5 section {text-align:left;}
+main .bg5 section h2 {}
+/* ##### pick제목&내용 공통 적용 ##### */
+main .bg section .pick_title {color:#fff; font-size:4.375rem; font-weight:500; letter-spacing:-0.2px;}
+main .bg section .pick_title strong {font-weight:900;}
+main .bg section .pick_contents {color:#fff; font-size:2.5rem; letter-spacing:-0.2px; line-height:1.3; margin-top:40px;}
+main .bg section .pick_contents em {font-weight:700;}
+/* 템플릿 이미지 디자인 정렬 */
+main .bg .item_wrap {
+    width:100%;
+    margin-top:133px;
+    display:flex; justify-content:center; align-items:center;
+}
+main .bg .item_wrap .item img {
+    border:17px solid #fff; border-radius:15px;
+    filter:drop-shadow(0 0 10px rgba(0,0,0,50%));
+}
+/* 겹침 디자인 */
+main .bg .item_wrap .item1, main .bg .item_wrap .item2, main .bg .item_wrap .item3 {margin-right:-39px;}
+main .bg .item_wrap .item5, main .bg .item_wrap .item6, main .bg .item_wrap .item7 {margin-left:-39px;}
+/* z-index 설정 */
+main .bg .item_wrap .item1, main .bg .item_wrap .item7 {position:relative; z-index:1;}
+main .bg .item_wrap .item2, main .bg .item_wrap .item6 {position:relative; z-index:2;}
+main .bg .item_wrap .item3, main .bg .item_wrap .item5 {position:relative; z-index:3;}
+main .bg .item_wrap .item4 {position:relative; z-index:4;}
+/* item 상단 제목 및 계정 내용 */
+main .bg .item_wrap .item4 .item_contents {
+    text-align:left;
+    position:absolute; left:30px; bottom:30px;
+}
+main .bg .item_wrap .item4 .item_contents p:first-child {
+    font-size:2.125rem; font-weight:500; letter-spacing:-0.2px; color:#fff;
+    margin-bottom:15px;
+}
+main .bg .item_wrap .item4 .item_contents .epik_account {
+    font-size:1.25rem; color:#fff;
+    display:flex; align-items:center;
+}
+main .bg .item_wrap .item4 .item_contents .epik_account::before {
+    content:'';
+    background-image:url(../images/epik_logo_round.svg);
+    background-repeat:no-repeat;
+    width:40px; height:40px; background-size:40px; display:inline-block;
+    margin-right:3px;
+}
+main .bg .item_wrap .item4 .item_contents .epik_account::after {
+    content:'';
+    background-image:url(../images/official_mark.svg);
+    background-repeat:no-repeat;
+    width:28px; height:27px; background-size:27px; display:inline-block;
+    margin-left:8px;
+}
+main .bg .item_wrap .item {transition:transform 0.5s;}
+main .bg .item_wrap .item:hover {transform:translateY(-15px);}
+/* ================== 6. Pick2 ================== */
+main .bg6 section {text-align:left; padding-top:150px;}
+main .bg6 section .pick_title {color:#000;}
+main .bg6 section .pick_contents {color:#000; margin-bottom:80px;}
+main .bg6 section .wallpaper {
+    border-bottom:3px solid #636363;margin-bottom:150px;
+    display:flex; justify-content:space-between; align-items:center;
+}
+main .bg6 section .wallpaper::before, 
+main .bg6 section .wallpaper::after {
+    content:'';
+    background-image:url(../images/line_point.svg);
+    background-repeat:no-repeat;
+    width:32px; height:32px;
+    display:inline-block;
+    position:relative; top:258px; z-index:2;
+}
+main .bg6 section .wp2::before, 
+main .bg6 section .wp2::after {width:50px; height:40px; top:280px;}
+main .bg6 section .wp3::before, 
+main .bg6 section .wp3::after {top:277px;}
+main .bg6 section .wallpaper p {}
+main .bg6 section .wallpaper .wp_info {}
+main .bg6 section .wallpaper .wp_info h3 {
+    display:flex; align-items:center;
+    margin-bottom:50px;
+}
+main .bg6 section .wp2 .wp_info h3 {flex-flow:row wrap;}
+main .bg6 section .wp2 .wp_info h3 span {position:relative; left:60px;}
+main .bg6 section .wallpaper .wp_info h3 em {
+    font-size:2.125rem; font-weight:700;
+    padding:0 20px; line-height:60px; border-radius:30px; background-color:#e0e0e0;
+}
+main .bg6 section .wallpaper .wp_info h3 strong {font-size:1.625rem; font-weight:700; margin:0 10px 0 15px;}
+main .bg6 section .wallpaper .wp_info h3 span {font-size:1.625rem;}
+main .bg6 section .wallpaper .wp_info p {font-size:1.25rem; line-height:1.7; margin-left:60px;}
+/* ================== 7. Pick3 ================== */
+main .bg7 {position:relative; background-image:url(../images/bg7.jpg); padding:150px; overflow:hidden;}
+main .bg7 section {display:flex; justify-content:space-between;}
+main .bg7 section p {}
+main .bg7 section p img {}
+main .bg7 section .right {text-align:left; padding-top:50px;}
+main .bg7 .filter_img {
+    margin:0 auto; position:absolute; left:-515px; top:737px;
+    transition:left 3s;
+}
+main .bg7 .filter_img:hover {left:0; top:737px;}
+/* ================== 8. Sticker ================== */
+main .bg8 {}
+main .bg8 section {overflow:hidden; padding: 0 0 150px;}
+main .bg8 section .img_top {
+    display:flex; justify-content:space-between; align-items: flex-end;
+}
+main .bg8 section .img_top img {}
+main .bg8 section .img_top .sticker_logo {}
+main .bg8 section .pick_contents {color:#000; margin:45px 0;}
+main .bg8 section .img_btm {
+    display:flex; justify-content:space-between;
+}
+main .bg8 section .img_btm img:nth-child(odd) {
+    position:relative; top:189px;
+}
+/* ================== 9. 모든 기능-둘러보기 ================== */
+main .bg9 {background-image:url(../images/bg9.jpg); height:2919px; padding:150px 0;}
+main .bg9 section {}
+main .bg9 section h1 {}
+main .bg9 section h1 img {}
+main .bg9 section .pick_contents {margin:35px 0 100px;}
+main .bg9 section p {}
+main .bg9 section p img {}
+main .bg9 section .sticker_wrap {
+    position:relative;
+}
+main .bg9 section .sticker_wrap img {
+    position:absolute; left:0; top:0;
+}
+main .bg9 section .sticker_wrap img:first-child {left:301px; top:-1566px;}
+main .bg9 section .sticker_wrap img:nth-child(2) {left:1071px; top:-1431px;}
+main .bg9 section .sticker_wrap img:nth-child(3) {left:-65px; top:-888px;}
+main .bg9 section .sticker_wrap img:nth-child(4) {left:335px; top:-500px;}
+main .bg9 section .sticker_wrap img:nth-child(5) {left:728px; top:-915px;}
+main .bg9 section .sticker_wrap img:nth-child(6) {left:1100px; top:-807px;}
+main .bg9 section .sticker_wrap img:nth-child(7) {left:1082px; top:-124px;}
+/* ================== 10. 이벤트 ================== */
+main .bg10 {padding:150px 0; padding-bottom:0;}
+main .bg10 section {background-color:#191919; border-top-left-radius:1000px; border-top-right-radius:1000px;}
+/* event 디자인 */
+main .bg10 section .event_top {padding-top:150px;}
+main .bg10 section .event_top h1 {
+    font-size:3.75rem; font-weight:700; color:#fff;
+    letter-spacing:-0.2px;
+    width:345px; height:104px; background:linear-gradient(-60deg, #FF3A64, #6CF460);
+    border-radius:90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+}
+main .bg10 section .event_top h1 span {position:relative; bottom:5px;}
+/* event 제목 양옆 데코 가상선택자 */
+main .bg10 section .event_top h1::before {
+    content:'';
+    background-image:url(../images/shine_deco.svg);
+    background-repeat:no-repeat;
+    width:35px; height:35px;
+    margin-right:15px;
+}
+main .bg10 section .event_top h1::after {
+    content:'';
+    background-image:url(../images/shine_deco.svg);
+    background-repeat:no-repeat;
+    width:35px; height:35px;
+    margin-left:15px;
+}
+main .bg10 section .event_top p {
+    margin:34px 0 70px;
+    font-size:2.5rem; color:#fff; line-height:1.2;
+}
+main .bg10 section .event_top p strong {font-weight:700; color:#FF3A64;}
+main .bg10 section .event_top p em {font-weight:700;}
+/* 인스타그램 사진 정렬 */
+main .bg10 section .spring_wrap {
+    padding:0 32px;
+    display:flex; justify-content:center; align-items:center;
+    width:100%; position:relative; left:5px;
+}
+main .bg10 section .spring_wrap img:nth-child(1),
+main .bg10 section .spring_wrap img:nth-child(2) {margin-right:-110px;}
+main .bg10 section .spring_wrap img:nth-child(3) {margin:0 auto;}
+main .bg10 section .spring_wrap img:nth-child(4),
+main .bg10 section .spring_wrap img:nth-child(5) {margin-left:-110px;}
+main .bg10 section .spring_wrap img:nth-child(1),
+main .bg10 section .spring_wrap img:nth-child(5) {position:relative; z-index:0;}
+main .bg10 section .spring_wrap img:nth-child(2),
+main .bg10 section .spring_wrap img:nth-child(4) {position:relative; z-index:1;}
+main .bg10 section .spring_wrap img:nth-child(3) {position:relative; z-index:2;}
+
+
+main .bg10 section .date_winner {text-align:left; margin:95px auto; display:inline-block;}
+main .bg10 section .date_winner dl {display:flex; justify-content:flex-start; align-items:center;}
+main .bg10 section .date_winner .event_date {}
+/* 이벤트기간&당첨 디자인 */
+main .bg10 section .date_winner dt {
+    margin-right:50px;
+    font-size:1.625rem; color:#fff;
+    padding:3px; background:linear-gradient(90deg, #6CF460, #FF3A64); border-radius:90px;
+    display:flex; /* justify-content:space-between; align-items:center; */
+}
+main .bg10 section .date_winner dt span {
+    padding:15px 20px; background-color:#191919; border-radius:90px;
+    display:flex; justify-content:space-between; align-items:center;
+}
+main .bg10 section .date_winner dt span::before,
+main .bg10 section .winner_benefit h3 span::before {
+    content:'';
+    background-image:url(../images/shine_deco.svg);
+    background-repeat:no-repeat;
+    display:inline-block; margin-right:10px;
+    width:16px; height:16px; background-size:16px;
+}
+main .bg10 section .date_winner dt span::after,
+main .bg10 section .winner_benefit h3 span::after {
+    content:'';
+    background-image:url(../images/shine_deco.svg);
+    background-repeat:no-repeat;
+    display:inline-block; margin-left:10px;
+    width:16px; height:16px; background-size:16px;
+}
+main .bg10 section .date_winner dd {color:#fff; font-size:1.625rem; font-weight:500; letter-spacing:-0.2px;}
+main .bg10 section .date_winner .event_winner {margin-top:26px;}
+/* e:이벤트기간&당첨 디자인 */
+/* winner 혜택 디자인 */
+main .bg10 section .winner_benefit {}
+main .bg10 section .winner_benefit h3 {padding:3px 0; width:1078px; background:linear-gradient(90deg, #6CF460, #FF3A64); margin:0 auto;}
+main .bg10 section .winner_benefit h3 span {font-size:1.625rem; text-transform:uppercase; color:#fff; width:1078px; padding:15px; background-color:#191919; display:inline-block;}
+main .bg10 section .winner_benefit .benefit_wrap {
+    margin:70px 0; display:flex; justify-content:center; align-items:center;
+}
+main .bg10 section .winner_benefit .benefit_wrap .bf {
+    width:401px; background:linear-gradient(180deg, #FF3A64, #6CF460);
+    padding:3px; border-radius:15px;
+}
+main .bg10 section .winner_benefit .benefit_wrap .bf > div {width:100%; padding:30px; text-align:left; background-color:#fff; border-radius:15px;}
+main .bg10 section .winner_benefit .benefit_wrap .bf:first-child {margin-right:50px;}
+main .bg10 section .winner_benefit .benefit_wrap .bf p:first-child {
+    font-size:1.25rem; font-weight:700; color:#fff;
+    padding:0 30px; line-height:39px; border-radius:50px; background:linear-gradient(90deg, #FF3A64, #806BFB);
+    display:inline-block;
+}
+main .bg10 section .winner_benefit .benefit_wrap .bf p:nth-child(2) {font-size:1.875rem; line-height:1.2; margin:31px 0;}
+main .bg10 section .winner_benefit .benefit_wrap .bf p:last-child {color:#636363;}
+main .bg10 section .winner_benefit .benefit_wrap .bf p em {font-size:2.813rem; font-weight:700; letter-spacing:-0.2px;}
+main .bg10 section .winner_benefit .benefit_wrap .bf p span {
+    font-size:2.15rem; font-weight:700; letter-spacing:-0.2px; background:linear-gradient(90deg, #6CF460, #806BFB); display:inline-block;
+    padding:3px 20px 4px; border-radius:50px; color:#fff; position:relative; bottom:3px;
+}
+main .bg10 section .winner_benefit .benefit_wrap .bf p img {position:relative; bottom:3px;}
+/* e:winner 혜택 디자인 */
+/* 이벤트 유의사항 */
+main .bg10 section .event_caution {background-color:#000; padding:75px 305px; text-align:left;}
+main .bg10 section .event_caution h3 {color:#fff; font-size:1.125rem; font-weight:500; margin-bottom:30px;}
+main .bg10 section .event_caution p {color:#636363; line-height:2.0;}
+/* ================== 11. 마무리 배너 ================== */
+main .bg11 {
+    background-image:url(../images/bg11.jpg);
+    margin:0 auto; height:672px; background-size:auto;
+}
+/* ================== 12. footer ================== */
+footer {background-color:#191919; padding:60px 0;}
+footer section {width:1250px; margin:0 auto;}
+footer section .f_top {display:flex; justify-content:space-between; align-items:center; margin-bottom:30px;}
+footer section .f_top p {color:#fff;}
+footer section .f_top .sns {display:flex; align-items:center;}
+footer section .f_top .sns a {margin-left:17px;}
+footer section .f_top .sns a img {transition:opacity 0.1s;}
+footer section .f_top .sns a img:hover {opacity:0.7;}
+footer section .f_bottom > div {color:#fff; font-size:0.75rem; margin-bottom:12px;}
+footer section .f_bottom > p {color:#fff; font-size:0.75rem;}
+footer section .f_bottom .ad_top {}
+footer section .f_bottom .ad_top a {color:#fff; transition:color 0.2s;}
+footer section .f_bottom .ad_top a:hover {color:#9B9B9B;}
+footer section .f_bottom .ad_top a:nth-child(2) {
+    padding:0 7px; border-left:1.5px solid #fff; border-right:1.5px solid #fff;
+    display:inline-block; line-height:10px; margin:0 5px;
+}
+footer section .f_bottom .ad_mid {}
+footer section .f_bottom .ad_mid p {display:inline-block;}
+footer section .f_bottom .ad_mid p:nth-child(2) {
+    padding:0 7px; border-left:1.5px solid #fff; border-right:1.5px solid #fff;
+    display:inline-block; line-height:10px; margin:0 5px;
+}
+
+footer section .f_bottom .ad_mid p a {color:#fff; transition:color 0.2s;}
+footer section .f_bottom .ad_mid p a:hover {color:#9B9B9B;}
+footer section .f_bottom .ad_btm {}
