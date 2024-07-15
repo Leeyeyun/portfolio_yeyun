@@ -1,0 +1,169 @@
+/* scroll behavior */
+body,html {scroll-behavior:smooth;}
+/* 공통 */
+body .intro, body .profile, body .web, body .contents, body .web, body .app, body .graphic {height:100vh; max-width:1680px; margin:0 auto;}
+/* header */
+header {
+    position:fixed; left:0; top:0; width:100vw; margin:0 auto;
+    padding:60px 0;
+    
+}
+header p {font-size:1.125rem; color:#565656; letter-spacing:0.5px; text-transform: uppercase;}
+header .center {
+    position:absolute; width:100vw; left:0; top:60px;
+    text-align:center;
+}
+header .side {
+    display:flex; justify-content:space-between; align-items:center;
+    max-width:1680px; margin:0 auto;
+}
+header .side .left p:last-child {display:none;}
+/* nav */
+nav {
+    height:100%;
+    position:fixed; right:120px; bottom:0; z-index:99999;
+    display:flex; flex-flow:column nowrap; align-items:flex-end; justify-content:center;
+}
+nav > a {margin-bottom:16px; display:flex; align-items:center;}
+nav > a > span {
+    color:#0c0c0c; font-weight:500; margin-right:-24px; opacity:0;
+    transition:margin-right 0.3s, opacity 0.3s;
+}
+nav > a::after {
+    content:''; display:inline-block;
+    width:16px; height:16px; border:2px solid #0c0c0c; border-radius:50%;
+    margin-left:12px; background-color:transparent; transition:background-color 0.3s;
+}
+nav > a:hover::after {background-color:#0c0c0c;}
+nav > a:last-child {margin-bottom:0;}
+/* 0. Intro */
+.intro {display:flex; justify-content:center;}
+.intro .center {
+    display:flex; flex-flow:column nowrap; justify-content:center; align-items:center;
+}
+.intro .center > p {font-size:1.5rem; font-weight:500;}
+.intro .center > p em {font-weight:700;}
+.intro .center .main_logo {margin:46px 0;}
+.intro .scroll {position:absolute; bottom:100px; display:flex; flex-flow:column nowrap; justify-content:center; align-items:center;}
+.intro .scroll img:first-child {animation:scroll1 1.2s linear both infinite;}
+.intro .scroll img:last-child {animation:scroll2 1.2s 0.2s linear both infinite;}
+.intro .scroll img {position:absolute;}
+/* 스크롤 애니메이션 */
+@keyframes scroll1 {
+    0% {top:8px; opacity:0;}
+    50% {top:14px; opacity:1;}
+    100% {top:20px; opacity:0;}
+}
+@keyframes scroll2 {
+    0% {top:18px; opacity:0;}
+    50% {top:24px; opacity:1;}
+    100% {top:30px; opacity:0;}
+}
+
+/* 1. profile */
+.profile {display:flex; align-items:center; padding-top:36px;}
+.profile .left {padding:25px 120px 25px 0; border-right:1px solid #D9D9D9;}
+.profile .left .my_info {display:flex; align-items:center; margin-bottom:120px;}
+.profile .left .my_info .photo {height:250px; border-radius:50%; overflow:hidden; margin-right:60px;}
+.profile .left .my_info .photo img {height:100%;}
+.profile .left .my_info .text {}
+.profile .left .my_info .text > * {line-height:1.7;}
+.profile .left .my_info .text h1 {font-size:1.5rem; font-weight:600;}
+.profile .left .logo_explain {text-align:center;}
+.profile .left .logo_explain .top {display:flex; flex-flow:row nowrap; align-items:center; justify-content:center;}
+/* 로고설명 bracket 추가 */
+.profile .left .logo_explain .top::before {
+    content:''; display:inline-block;
+    background-image:url(../images/bracket.svg);
+    width:23px; height:182px;
+    background-size:cover; background-repeat:no-repeat;
+    margin-right:36px;
+}
+.profile .left .logo_explain .top::after {
+    content:''; display:inline-block;
+    background-image:url(../images/bracket.svg);
+    width:23px; height:182px;
+    background-size:cover; background-repeat:no-repeat;
+    margin-left:36px; transform:rotate(180deg);
+}
+.profile .left .logo_explain .top span {font-weight:300; color:#565656; line-height:1.7; margin-top:16px;}
+.profile .left .logo_explain .top p img {margin:0 46px; padding-bottom:90px;}
+.profile .left .logo_explain div {display:flex; flex-flow:column nowrap; align-items:center;}
+.profile .left .logo_explain > p {text-align:center; font-size:1.125rem; font-weight:500; line-height:1.7; margin-top:60px;}
+.profile .left .logo_explain > p em {font-weight:700;}
+.profile .right {
+    padding-left:120px; text-align:left;
+    display:flex; flex-flow:column wrap; align-items:flex-start;
+    height:570px; justify-content:space-between;
+}
+.profile .right .list h2 {font-size:1.125rem; font-weight:700; margin-bottom:24px;}
+.profile .right .list:nth-child(2) {margin:46px 0;}
+.profile .right .list:first-child h2 {margin-top:0;}
+.profile .right .list p {line-height:1.7; margin-bottom:4px;}
+.profile .right .list p:last-child {margin-bottom:0;}
+.profile .right .list p span {font-size:0.875rem; color:#6b6b6b; margin-right:10px;}
+.profile .right .list:last-child {margin-left:148px;}
+.profile .right .list:last-child .tool {width:239px; display:flex; flex-flow:row wrap; justify-content:flex-start;}
+.profile .right .list:last-child .tool p {margin-right:12px;}
+
+/* 2-1. contents */
+.contents {padding-top:150px;}
+.contents .contents_wrap {display:flex; align-items:flex-start; justify-content:center;}
+.contents .contents_wrap a {
+    display:inline-block; padding:16px 40px;
+    width:calc(100% / 4); height:720px; position:relative;
+    transition:background-color 0.5s; border-right:1px solid #D4D4D4;
+}
+.contents .contents_wrap a > p:first-child {
+    color:#0c0c0c; transition:color 0.5s;
+    display:flex; justify-content:space-between; align-items:flex-end;
+}
+.contents .contents_wrap a > p span {font-size:1.625rem; font-weight:600; transform:translateY(-24px);}
+.contents .contents_wrap a > p em {font-size:5rem; letter-spacing:-0.2px; font-weight:600;}
+.contents .contents_wrap a .project_wrap {margin-top:36px; color:#000; transition:color 0.5s;}
+.contents .contents_wrap a .project_wrap > p {font-size:1.125rem; font-weight:500; line-height:1.2; margin-bottom:16px;}
+.contents .contents_wrap a .project_wrap > p:last-child {margin-bottom:0;}
+.contents .contents_wrap a  .hover {
+    position:absolute; left:0; top:0; width:100%;
+    text-align:center; margin-top:320px; transition:opacity 0.3s;
+}
+.contents .contents_wrap a .thum {
+    position:absolute; right:0;/* hover-70px */ bottom:28px; height:45%; z-index:999; opacity:0; transition:right ease-out .5s, opacity 0.5s;
+}
+.contents .contents_wrap a:nth-child(2) .thum {height:60%;}
+.contents .contents_wrap a:nth-child(3) .thum {height:50%; bottom:36px;}
+.contents .contents_wrap a .thum > img {height:100%;}
+.contents .contents_wrap a:last-child {
+    background:url(../video/logo_motion.mp4);
+    background-position:center; background-size:cover;
+    background-repeat:no-repeat; border:0;
+    
+}
+
+/* 3. web design */
+.web {display:flex; align-items:center; padding-top:36px;}
+.web .thumnail {margin-right:280px;}
+.web .text {width:34%;}
+.web .text > p:first-child {font-size:1.125rem; font-weight:500; color:#393939;}
+.web .text h1 {font-size:3.75rem; font-weight:700;}
+.web .text .info {margin:46px 0;}
+.web .text .info > p {margin-bottom:12px; color:#393939; font-weight:600; letter-spacing:-0.2px;}
+.web .text .info > p:last-child {margin-bottom:0;}
+.web .text .info > p span {width:105px; display:inline-block;}
+.web .text .overview {line-height:1.7; word-break:keep-all; color:#626262;}
+.web .text .link {margin-top:46px; display:flex; justify-content:flex-start;}
+.web .text .link > a {
+    display:flex; align-items:center; margin-right:16px;
+    padding:10px 16px; border-radius:30px; border:1px solid #0c0c0c;
+    transition:background-color 0.5s;
+}
+.web .text .link > a:hover {
+    background-color:rgba(0,0,0,0.1);
+}
+.web .text .link > a:last-child {margin:0;}
+.web .text .link > a > span {margin-left:8px; color:#0c0c0c; font-size:0.875rem;}
+.web .text .link > a > span em {font-weight:600;}
+
+
+
+
