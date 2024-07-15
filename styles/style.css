@@ -1,11 +1,11 @@
 /* scroll behavior */
 body,html {scroll-behavior:smooth;}
 /* 공통 */
-body .intro, body .profile, body .web, body .contents, body .web, body .app, body .graphic {height:100vh; max-width:1680px; margin:0 auto;}
+body .intro, body .profile, body .contents, body .graphic {height:100vh; max-width:1680px; margin:0 auto;}
 /* header */
 header {
     position:fixed; left:0; top:0; width:100vw; margin:0 auto;
-    padding:60px 0;
+    padding:60px 0; z-index:99999;
     
 }
 header p {font-size:1.125rem; color:#565656; letter-spacing:0.5px; text-transform: uppercase;}
@@ -140,30 +140,86 @@ nav > a:last-child {margin-bottom:0;}
     
 }
 
-/* 3. web design */
-.web {display:flex; align-items:center; padding-top:36px;}
-.web .thumnail {margin-right:280px;}
-.web .text {width:34%;}
-.web .text > p:first-child {font-size:1.125rem; font-weight:500; color:#393939;}
-.web .text h1 {font-size:3.75rem; font-weight:700;}
-.web .text .info {margin:46px 0;}
-.web .text .info > p {margin-bottom:12px; color:#393939; font-weight:600; letter-spacing:-0.2px;}
-.web .text .info > p:last-child {margin-bottom:0;}
-.web .text .info > p span {width:105px; display:inline-block;}
-.web .text .overview {line-height:1.7; word-break:keep-all; color:#626262;}
-.web .text .link {margin-top:46px; display:flex; justify-content:flex-start;}
-.web .text .link > a {
+/* 3. web design - granhand */
+.web_wrap {display:flex; align-items:center; height:100vh;}
+.web_wrap .text {width:40%; height:100vh; display:flex; justify-content:center; align-items:center; background-color:#FDFBF4;}
+.web_wrap .text .text_wrap {width:calc(100% - 240px); padding-top:36px;}
+.web_wrap .text > p:first-child {font-size:1.125rem; font-weight:500; color:#393939;}
+.web_wrap .text h1 {font-size:3.75rem; font-weight:700;}
+.web_wrap .text .info {margin:46px 0; color:#393939;}
+.web_wrap .text .info > p {margin-bottom:12px; font-weight:600; letter-spacing:-0.2px;}
+.web_wrap .text .info > p:last-child {margin-bottom:0;}
+.web_wrap .text .info > p span {width:105px; display:inline-block;}
+.web_wrap .text .overview {line-height:1.7; word-break:keep-all; color:#626262;}
+.web_wrap .text .link {margin-top:46px; display:flex; justify-content:flex-start;}
+.web_wrap .text .link > a {
     display:flex; align-items:center; margin-right:16px;
     padding:10px 16px; border-radius:30px; border:1px solid #0c0c0c;
     transition:background-color 0.5s;
 }
-.web .text .link > a:hover {
+.web_wrap .text .link > a:hover {
     background-color:rgba(0,0,0,0.1);
 }
-.web .text .link > a:last-child {margin:0;}
-.web .text .link > a > span {margin-left:8px; color:#0c0c0c; font-size:0.875rem;}
-.web .text .link > a > span em {font-weight:600;}
+.web_wrap .text .link > a:last-child {margin:0;}
+.web_wrap .text .link > a > span {margin-left:8px; color:#0c0c0c; font-size:0.875rem;}
+.web_wrap .text .link > a > span em {font-weight:600;}
+/* web-right */
+.web_wrap .website_link {width:60%; height:100vh; overflow:hidden; position:relative;}
+.web_wrap .website_link .bg {position:relative; display:flex; justify-content:center; align-items:flex-start; height:100vh;}
+.web_wrap .website_link .bg img {transform:translate(-160px,-60px);}
+.web_wrap .website_link .bg .shadow {
+    position:absolute; width:100%; height:100%; background:linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)); z-index:50;
+}
+.web_wrap .website_link .title_link {
+    display:flex; flex-flow:column nowrap; align-items:center; justify-content:center;
+    position:absolute; left:0; top:0; z-index:100; width:100%;
+    padding-top:370px;
+}
+.web_wrap .website_link .title_link h2 {font-size:5rem; font-weight:700; color:#fff;}
+.web_wrap .website_link .title_link > a {
+    color:#fff; font-size:1.25rem; font-weight:500;
+    display:flex; flex-flow:column nowrap; align-items:center;
+    transition:margin-left 0.4s, opacity 0.4s;
+}
+.web_wrap .website_link .title_link > a:hover {margin-left:20px; opacity:0.8;}
+.web_wrap .website_link .title_link > a::after {
+    content:''; display:inline-block;
+    background-image:url(../images/go_link.png); margin-top:-10px; margin-left:6px;
+    background-repeat:no-repeat; width:200px; height:17px; background-size:cover;
+}
+/* 3. web design - hince */
+.web2 .text {background-color:#A36D6A;}
+.web2 .text_wrap > p:first-child, .web2 .text .info {color:#DADADA;}
+.web2 .text h1 {color:#fff;}
+.web2 .text .overview {color:#dcdcdc;}
+.web2 .text .link {filter:invert(1);}
+.web2 .website_link .bg img {transform:translateY(-28px);}
 
-
+/* 4. app design - triplens */
+.app_wrap {display:flex; align-items:center; height:100vh; background-color:#3474EF; position:relative; overflow:hidden;}
+.app_wrap .bg {position:absolute; left:0; bottom:-16px; opacity:0.2;}
+.app_wrap .thum {position:relative; z-index:50;}
+.app_wrap .text {width:40%; height:100vh; display:flex; justify-content:center; align-items:center; position:relative; z-index:50;}
+.app_wrap .text .text_wrap {width:calc(100% - 120px); padding-top:36px;}
+.app_wrap .text > p:first-child {font-size:1.125rem; font-weight:500; color:#fff;}
+.app_wrap .text h1 {height:70px;}
+.app_wrap .text h1 img {height:100%;}
+.app_wrap .text .info {margin:46px 0; color:#fff;}
+.app_wrap .text .info > p {margin-bottom:12px; font-weight:600; letter-spacing:-0.2px; display:flex; justify-content:flex-start; align-items:flex-start;}
+.app_wrap .text .info > p:last-child {margin-bottom:0;}
+.app_wrap .text .info > p .title {width:105px; display:inline-block; font-weight:300;}
+.app_wrap .text .overview {line-height:1.7; word-break:keep-all; color:#EFEFEF;}
+.app_wrap .text .link {margin-top:46px; display:flex; justify-content:flex-start; filter:invert(1);}
+.app_wrap .text .link > a {
+    display:flex; align-items:center; margin-right:16px;
+    padding:10px 16px; border-radius:30px; border:1px solid #0c0c0c;
+    transition:background-color 0.5s;
+}
+.app_wrap .text .link > a:hover {
+    background-color:rgba(0,0,0,0.1);
+}
+.app_wrap .text .link > a:last-child {margin:0;}
+.app_wrap .text .link > a > span {margin-left:8px; color:#0c0c0c; font-size:0.875rem;}
+.app_wrap .text .link > a > span em {font-weight:600;}
 
 

@@ -40,3 +40,10 @@ for(let i of contents_a){
         i.children[1].style.color = '#0c0c0c'
     })
 }
+
+//swiper ux
+const swiper1 = new Swiper('.ux-slide',{
+    autoplay:{},
+    loop:true,
+    speed:'500',
+})
