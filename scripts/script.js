@@ -47,6 +47,7 @@ for(let i of contents_a){
             i.children[0].style.color = '#fff'
             i.children[1].style.color = '#fff'
             bg_video.style.opacity = '1';
+            bg_video.play();
             contents_a_m.children[0].style.color = '#fff';
             contents_a_m.children[1].style.color = '#fff';
         })
@@ -55,8 +56,10 @@ for(let i of contents_a){
             i.children[0].style.color = '#0c0c0c'
             i.children[1].style.color = '#0c0c0c'
             bg_video.style.opacity = '';
+            bg_video.pause();
             contents_a_m.children[0].style.color = '#0c0c0c';
             contents_a_m.children[1].style.color = '#0c0c0c';
+            bg.video.currentTime = 0;
         })
     }
 }
@@ -71,8 +74,8 @@ const swiper1 = new Swiper('.ux-slide',{
 const bg = document.querySelector('#app_bg');
 swiper1.on('slideChange',function(){
     console.log('change')
-    console.log(swiper1.activeIndex)
-    switch (swiper1.activeIndex) {
+    console.log(swiper1.realIndex)
+    switch (swiper1.realIndex) {
         case 0:
             bg.style.backgroundColor = "#3474EF";
             break;
