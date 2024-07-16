@@ -47,3 +47,20 @@ const swiper1 = new Swiper('.ux-slide',{
     loop:true,
     speed:'500',
 })
+
+const bg = document.querySelector('#app_bg');
+swiper1.on('slideChange',function(){
+    console.log('change')
+    console.log(swiper1.activeIndex)
+    switch (swiper1.activeIndex) {
+        case 0:
+            bg.style.backgroundColor = "#3474EF";
+            break;
+        case 1:
+            bg.style.backgroundColor = "#7064FF";
+            break;
+        case 2:
+            bg.style.backgroundColor = "#006EFF";
+            break;
+    }
+})

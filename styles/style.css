@@ -8,7 +8,7 @@ header {
     padding:60px 0; z-index:99999;
     
 }
-header p {font-size:1.125rem; color:#565656; letter-spacing:0.5px; text-transform: uppercase;}
+header p {font-size:1.125rem; color:#BFBFBF; letter-spacing:0.5px; text-transform: uppercase;}
 header .center {
     position:absolute; width:100vw; left:0; top:60px;
     text-align:center;
@@ -196,30 +196,31 @@ nav > a:last-child {margin-bottom:0;}
 .web2 .website_link .bg img {transform:translateY(-28px);}
 
 /* 4. app design - triplens */
-.app_wrap {display:flex; align-items:center; height:100vh; background-color:#3474EF; position:relative; overflow:hidden;}
-.app_wrap .bg {position:absolute; left:0; bottom:-16px; opacity:0.2;}
-.app_wrap .thum {position:relative; z-index:50;}
-.app_wrap .text {width:40%; height:100vh; display:flex; justify-content:center; align-items:center; position:relative; z-index:50;}
-.app_wrap .text .text_wrap {width:calc(100% - 120px); padding-top:36px;}
-.app_wrap .text > p:first-child {font-size:1.125rem; font-weight:500; color:#fff;}
-.app_wrap .text h1 {height:70px;}
-.app_wrap .text h1 img {height:100%;}
-.app_wrap .text .info {margin:46px 0; color:#fff;}
-.app_wrap .text .info > p {margin-bottom:12px; font-weight:600; letter-spacing:-0.2px; display:flex; justify-content:flex-start; align-items:flex-start;}
-.app_wrap .text .info > p:last-child {margin-bottom:0;}
-.app_wrap .text .info > p .title {width:105px; display:inline-block; font-weight:300;}
-.app_wrap .text .overview {line-height:1.7; word-break:keep-all; color:#EFEFEF;}
-.app_wrap .text .link {margin-top:46px; display:flex; justify-content:flex-start; filter:invert(1);}
-.app_wrap .text .link > a {
+#app {position:relative; height:100vh; overflow:hidden;}
+#app #app_bg {background-color:#3474EF; height:100vh; position:absolute; width:100vw;}
+#app #app_bg .eclipse {position:absolute; left:0; bottom:-16px; opacity:0.2;}
+#app .ux-slide {}
+.swiper-slide .app_wrap {display:flex; align-items:center; height:100vh; position:relative; overflow:hidden;}
+.swiper-slide .app_wrap .thum {position:relative; z-index:50;}
+.swiper-slide .app_wrap .text {width:40%; height:100vh; display:flex; justify-content:center; align-items:center; position:relative; z-index:50;}
+.swiper-slide .app_wrap .text .text_wrap {width:calc(100% - 120px); padding-top:36px;}
+.swiper-slide .app_wrap .text > p:first-child {font-size:1.125rem; font-weight:500; color:#fff;}
+.swiper-slide .app_wrap .text h1 {height:70px;}
+.swiper-slide .app_wrap .text h1 img {height:100%;}
+.swiper-slide .app_wrap .text .info {margin:46px 0; color:#fff;}
+.swiper-slide .app_wrap .text .info > p {margin-bottom:12px; font-weight:600; letter-spacing:-0.2px; display:flex; justify-content:flex-start; align-items:flex-start;}
+.swiper-slide .app_wrap .text .info > p:last-child {margin-bottom:0;}
+.swiper-slide .app_wrap .text .info > p .title {width:105px; display:inline-block; font-weight:300;}
+.swiper-slide .app_wrap .text .overview {line-height:1.7; word-break:keep-all; color:#EFEFEF; font-weight:100;}
+.swiper-slide .app_wrap .text .link {margin-top:46px; display:flex; justify-content:flex-start; filter:invert(1);}
+.swiper-slide .app_wrap .text .link > a {
     display:flex; align-items:center; margin-right:16px;
     padding:10px 16px; border-radius:30px; border:1px solid #0c0c0c;
     transition:background-color 0.5s;
 }
-.app_wrap .text .link > a:hover {
+.swiper-slide .app_wrap .text .link > a:hover {
     background-color:rgba(0,0,0,0.1);
 }
-.app_wrap .text .link > a:last-child {margin:0;}
-.app_wrap .text .link > a > span {margin-left:8px; color:#0c0c0c; font-size:0.875rem;}
-.app_wrap .text .link > a > span em {font-weight:600;}
-
-
+.swiper-slide .app_wrap .text .link > a:last-child {margin:0;}
+.swiper-slide .app_wrap .text .link > a > span {margin-left:8px; color:#0c0c0c; font-size:0.875rem;}
+.swiper-slide .app_wrap .text .link > a > span em {font-weight:600;}
