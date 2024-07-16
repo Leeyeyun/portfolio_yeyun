@@ -133,12 +133,9 @@ nav > a:last-child {margin-bottom:0;}
 .contents .contents_wrap a:nth-child(2) .thum {height:60%;}
 .contents .contents_wrap a:nth-child(3) .thum {height:50%; bottom:36px;}
 .contents .contents_wrap a .thum > img {height:100%;}
-.contents .contents_wrap a:last-child {
-    background:url(../video/logo_motion.mp4);
-    background-position:center; background-size:cover;
-    background-repeat:no-repeat; border:0;
-    
-}
+.contents .contents_wrap a:last-child {position:relative; overflow:hidden;}
+.contents .contents_wrap a:last-child .project_wrap video {position:absolute; left:-90%; top:0; opacity:0; transition:opacity 0.5s; filter:brightness(0.5);}
+.contents .contents_wrap a:last-child p:first-child, .contents .contents_wrap a:last-child .project_wrap > p {position:relative; z-index:50;}
 
 /* 3. web design - granhand */
 .web_wrap {display:flex; align-items:center; height:100vh;}
