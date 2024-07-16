@@ -192,7 +192,7 @@ nav > a:last-child {margin-bottom:0;}
 .web2 .text_wrap > p:first-child, .web2 .text .info {color:#DADADA;}
 .web2 .text h1 {color:#fff;}
 .web2 .text .overview {color:#dcdcdc;}
-.web2 .text .link {filter:invert(1);}
+.web2 .text .link {filter:invert(1); position:relative; z-index:999999;}
 .web2 .website_link .bg img {transform:translateY(-28px);}
 
 /* 4. app design - triplens */
