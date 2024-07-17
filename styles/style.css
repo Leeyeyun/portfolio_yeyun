@@ -221,9 +221,41 @@ nav > a:last-child {margin-bottom:0;}
 .swiper-slide .app_wrap .text .link > a:last-child {margin:0;}
 .swiper-slide .app_wrap .text .link > a > span {margin-left:8px; color:#0c0c0c; font-size:0.875rem;}
 .swiper-slide .app_wrap .text .link > a > span em {font-weight:600;}
+/* graphic */
+.graphic {height:100vh; display:flex; justify-content:center; align-items:center; position:relative;}
+.graphic .big_bg {
+    position:fixed; left:0; top:0; z-index:999;
+    width:100%; height:100vh;
+    background:rgba(0,0,0,0.6);
+}
+.graphic .big_bg .img {
+    max-width:50vw; margin:50px auto;
+    height:90vh; overflow-y:auto; overflow-x:hidden;
+}
+.graphic .big_bg .img img {width:100%;}
+.graphic .detail {
+    height:100vh; overflow:hidden;
+    width:50%;
+    background:url(../project/graphic/detail/milkis_thum.jpg);
+    background-repeat:no-repeat; background-size:cover; text-align:center;
+}
+.graphic h2 {font-size:4.375rem; font-weight:700; color:#fff; margin:160px 0 16px;}
+.graphic .landing {
+    height:100vh; overflow:hidden;
+    width:50%;
+    background:url(../project/graphic/landing/epik/epik_thum.jpg);
+    background-repeat:no-repeat; background-size:cover; text-align:center;
+}
+.graphic .detail p {width:calc(100% - 400px); margin:0 auto; border-radius:15px; overflow: hidden; transition:transform 0.5s;}
+.graphic .detail p:hover {transform:translateY(-16px);}
+.graphic .landing a:hover {transform:translateY(-16px);}
+.graphic .detail p img {width:100%;}
+.graphic .landing a {width:calc(100% - 400px); display:inline-block; border-radius:15px; overflow: hidden; transition:transform 0.5s;}
+.graphic .landing a img {width:100%;}
 
-.graphic {height:50vh; text-align:center; display:flex; flex-flow:column nowrap; justify-content:center; align-items:center;}
-.graphic h1 {font-size:2rem; font-weight:500;}
-.graphic p {font-weight:500; margin:16px 0 50px;}
-.graphic p:last-child {font-size:0.875rem; color:#393939; margin-top:8px; margin-bottom:0;}
-.graphic .kakao {}
+/* contact */
+.contact {height:50vh; text-align:center; display:flex; flex-flow:column nowrap; justify-content:center; align-items:center;}
+.contact h1 {font-size:2rem; font-weight:500;}
+.contact p {font-weight:500; margin:16px 0 50px;}
+.contact p:last-child {font-size:0.875rem; color:#393939; margin-top:8px; margin-bottom:0;}
+.contact .kakao {}

@@ -87,3 +87,27 @@ swiper1.on('slideChange',function(){
             break;
     }
 })
+
+// detail popup
+// 1. 팝업 숨기기(big_bg)
+// 2. swiper img 클릭 시
+// 3. 팝업 보이기
+const big_bg = document.querySelector('.big_bg')
+const detail_img = document.querySelector('.detail p')
+const big_img = document.querySelector('.big_bg img')
+big_bg.style.display = 'none'
+detail_img.addEventListener('click',(e)=>{
+    // 클릭한 대상 관련에 a가 있다면 스크롤 위로 올라가는 기능 막기
+    e.preventDefault()
+    // 큰 이미지 부모 보이기
+    big_bg.style.display = 'block';
+    // 팝업 실행 시 body 스크롤 막기
+    document.body.style.overflow = 'hidden'; //팝업 안에서만 스크롤 되도록 body에 overflow 설정
+    big_bg.children[0].scrollTo(0,0); //스크롤 초기화 (항상 맨위에 위치하도록)
+})
+
+// 팝업 출력 시 팝업 닫기
+big_bg.addEventListener('click',()=>{
+    big_bg.style.display = 'none';
+    document.body.style.overflow = '';
+})
