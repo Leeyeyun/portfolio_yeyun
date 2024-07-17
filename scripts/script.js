@@ -74,8 +74,8 @@ const swiper1 = new Swiper('.ux-slide',{
 const bg = document.querySelector('#app_bg');
 swiper1.on('slideChange',function(){
     console.log('change')
-    console.log(swiper1.activeIndex)
-    switch (swiper1.activeIndex) {
+    console.log(swiper1.realIndex)
+    switch (swiper1.realIndex) {
         case 0:
             bg.style.backgroundColor = "#3474EF";
             break;
