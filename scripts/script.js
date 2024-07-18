@@ -4,7 +4,6 @@ const nav_a = nav.querySelectorAll('nav > a')
 for(let i of nav_a){
     i.addEventListener('mouseover',(e)=>{
         e.preventDefault();
-        console.log(i.children[0])
         i.children[0].style.marginRight = '0';
         i.children[0].style.opacity = '1'
     })
@@ -20,7 +19,6 @@ const contents_wrap = document.querySelector('.contents_wrap')
 const contents_a = contents_wrap.querySelectorAll('.contents_wrap > a')
 const bg_video = document.querySelector('video')
 const contents_a_m = contents_a[3]
-console.log(contents_a[0].children.length, contents_a[3].children.length)
 for(let i of contents_a){
     if (i.children.length == 4){
         i.addEventListener('mouseover',(e)=>{
@@ -31,6 +29,9 @@ for(let i of contents_a){
             i.style.backgroundColor = '#0c0c0c';
             i.children[0].style.color = '#fff'
             i.children[1].style.color = '#fff'
+            if (window.matchMedia("(max-width: 1260px)").matches){
+                i.children[3].style.right ='-20px';
+            }
         })
         i.addEventListener('mouseout',(e)=>{
             e.preventDefault();
@@ -47,7 +48,9 @@ for(let i of contents_a){
             i.children[0].style.color = '#fff'
             i.children[1].style.color = '#fff'
             bg_video.style.opacity = '1';
-            bg_video.play();
+            if (bg_video.paused || bg_video.ended) {
+                bg_video.play();
+            }
             contents_a_m.children[0].style.color = '#fff';
             contents_a_m.children[1].style.color = '#fff';
         })
@@ -56,7 +59,10 @@ for(let i of contents_a){
             i.children[0].style.color = '#0c0c0c'
             i.children[1].style.color = '#0c0c0c'
             bg_video.style.opacity = '';
-            bg_video.pause();
+            if (!bg_video.paused) {
+                bg_video.pause();
+                bg_video.currentTime = 0;
+            }
             bg_video.currentTime = 0;
             contents_a_m.children[0].style.color = '#0c0c0c';
             contents_a_m.children[1].style.color = '#0c0c0c';
@@ -73,8 +79,8 @@ const swiper1 = new Swiper('.ux-slide',{
 
 const bg = document.querySelector('#app_bg');
 swiper1.on('slideChange',function(){
-    console.log('change')
-    console.log(swiper1.realIndex)
+    /* console.log('change')
+    console.log(swiper1.realIndex) */
     switch (swiper1.realIndex) {
         case 0:
             bg.style.backgroundColor = "#3474EF";
@@ -112,10 +118,17 @@ big_bg.addEventListener('click',()=>{
     document.body.style.overflow = '';
 })
 
-//nav scroll trigger
-gsap.to('nav a',{
-    scrollTrigger:'.contents',
-    duration:0.5,//1초
-    delay:0.2,
-    opacity:0,
+window.addEventListener('scroll',function(){
+    var contents_top = contents.getBoundingClientRect().top;
+    console.log(contents_top)
+    if(contents_top < 283 && contents_top > -528){//contents 위치 조건문
+        nav.style.opacity = '0'
+    }else {
+        nav.style.opacity = '0.6'
+    }
+
+    if(contents_top > 283 || contents_top < -3636){
+        nav.style.filter = 'invert(0)'
+    }else {nav.style.filter = 'invert(1)'}
+
 })

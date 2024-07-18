@@ -1,7 +1,7 @@
 /* scroll behavior */
 body,html {scroll-behavior:smooth;}
 /* 공통 */
-body .intro, body .profile, body .contents {height:100vh; max-width:1680px; margin:0 auto;}
+body .intro, body .profile {height:100vh; max-width:1680px; margin:0 auto;}
 /* header */
 header {
     position:fixed; left:0; top:0; width:100vw; margin:0 auto;
@@ -20,7 +20,7 @@ header .side {
 header .side .left p:last-child {display:none;}
 /* nav */
 nav {
-    height:100%; opacity:0.6;
+    height:100%; opacity:0.6; transition:opacity 0.3s, filter 0.3s;
     position:fixed; right:120px; bottom:0; z-index:99999;
     display:flex; flex-flow:column nowrap; align-items:flex-end; justify-content:center;
 }
@@ -48,6 +48,7 @@ nav > a:last-child {margin-bottom:0;}
 .intro .scroll img:first-child {animation:scroll1 1.2s linear both infinite;}
 .intro .scroll img:last-child {animation:scroll2 1.2s 0.2s linear both infinite;}
 .intro .scroll img {position:absolute;}
+.intro .center .main_logo img {height:100%;}
 /* 스크롤 애니메이션 */
 @keyframes scroll1 {
     0% {top:8px; opacity:0;}
@@ -62,7 +63,7 @@ nav > a:last-child {margin-bottom:0;}
 
 /* 1. profile */
 .profile {display:flex; align-items:center; padding-top:36px;}
-.profile .left {padding:25px 120px 25px 0; border-right:1px solid #D9D9D9;}
+.profile .left {padding:25px 120px 25px 0;}
 .profile .left .my_info {display:flex; align-items:center; margin-bottom:120px;}
 .profile .left .my_info .photo {height:250px; border-radius:50%; overflow:hidden; margin-right:60px;}
 .profile .left .my_info .photo img {height:100%;}
@@ -91,9 +92,10 @@ nav > a:last-child {margin-bottom:0;}
 .profile .left .logo_explain div {display:flex; flex-flow:column nowrap; align-items:center;}
 .profile .left .logo_explain > p {text-align:center; font-size:1.125rem; font-weight:500; line-height:1.7; margin-top:60px;}
 .profile .left .logo_explain > p em {font-weight:700;}
+.profile .line {width:1px; height:calc(100% - 150px); background-color:#d9d9d9;}
 .profile .right {
     padding-left:120px; text-align:left;
-    display:flex; flex-flow:column wrap; align-items:flex-start;
+    display:flex; flex-flow:column wrap; align-content:center;
     height:570px; justify-content:space-between;
 }
 .profile .right .list h2 {font-size:1.125rem; font-weight:700; margin-bottom:24px;}
@@ -107,23 +109,24 @@ nav > a:last-child {margin-bottom:0;}
 .profile .right .list:last-child .tool p {margin-right:12px;}
 
 /* 2-1. contents */
-.contents {padding-top:150px;}
+.contents {padding-top:150px; position:relative; z-index:100000;}
 .contents .contents_wrap {display:flex; align-items:flex-start; justify-content:center;}
 .contents .contents_wrap a {
     display:inline-block; padding:16px 40px;
     width:calc(100% / 4); height:720px; position:relative;
     transition:background-color 0.5s; border-right:1px solid #D4D4D4;
 }
+.contents .contents_wrap a:last-child {border:0;}
 .contents .contents_wrap a > p:first-child {
     color:#0c0c0c; transition:color 0.5s;
     display:flex; justify-content:space-between; align-items:flex-end;
 }
-.contents .contents_wrap a > p span {font-size:1.625rem; font-weight:600; transform:translateY(-24px);}
+.contents .contents_wrap a > p span {font-size:1.625rem; font-weight:600; transform:translateY(-24px); text-align:right;}
 .contents .contents_wrap a > p em {font-size:5rem; letter-spacing:-0.2px; font-weight:600;}
 .contents .contents_wrap a .project_wrap {margin-top:36px; color:#000; transition:color 0.5s;}
 .contents .contents_wrap a .project_wrap > p {font-size:1.125rem; font-weight:500; line-height:1.2; margin-bottom:16px;}
 .contents .contents_wrap a .project_wrap > p:last-child {margin-bottom:0;}
-.contents .contents_wrap a  .hover {
+.contents .contents_wrap a .hover {
     position:absolute; left:0; top:0; width:100%;
     text-align:center; margin-top:320px; transition:opacity 0.3s;
 }
