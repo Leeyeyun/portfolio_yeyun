@@ -111,3 +111,11 @@ big_bg.addEventListener('click',()=>{
     big_bg.style.display = 'none';
     document.body.style.overflow = '';
 })
+
+//nav scroll trigger
+gsap.to('nav a',{
+    scrollTrigger:'.contents',
+    duration:0.5,//1초
+    delay:0.2,
+    opacity:0,
+})
