@@ -72,7 +72,7 @@ for(let i of contents_a){
 
 //swiper ux
 const swiper1 = new Swiper('.ux-slide',{
-    /* autoplay:{}, */
+    autoplay:{},
     loop:true,
     speed:'500',
 })
