@@ -103,8 +103,13 @@
     .graphic h2 {font-size:1.5rem; margin:120px 0 16px;}
     .contact {height:max-content; padding:36px 0;}
     #app {height:max-content;}
+    #app #app_bg {height:100%;}
+    .swiper-slide .app_wrap {padding:36px; height:max-content;}
     .swiper-slide .app_wrap .text h1 {height:40px;}
     .ux2 > .app_wrap .text h1 {height:50px;}
     .ux1 .app_wrap .thum {left:-20px;}
     .ux2 .app_wrap .thum {left:0;}
+    .swiper-slide .app_wrap .text .info > p {flex-flow:column nowrap;}
+    .swiper-slide .app_wrap .text .info > p .txt {width:100%;}
+    .graphic .detail p, .graphic .landing a {width:calc(100% - 30px);}
 }
