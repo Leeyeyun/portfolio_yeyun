@@ -94,7 +94,9 @@
     .graphic h2 {font-size:3rem;}
     .graphic .big_bg .img {max-width:50%;}
 }
+    
 @media screen and (max-width:420px){
+    nav {display:none;}
     body {width:100%; overflow-x:hidden;}
     .profile .left {padding:25px 0; width:100%;}
     .profile .left .my_info .photo {height:110px; margin-right:24px;}
