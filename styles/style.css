@@ -20,8 +20,8 @@ header .side {
 header .side .left p:last-child {display:none;}
 /* nav */
 nav {
-    height:100%; opacity:0.6; transition:opacity 0.3s, filter 0.3s;
-    position:fixed; right:100px; bottom:0; z-index:99999;
+    opacity:0.6; transition:opacity 0.3s, filter 0.3s;
+    position:fixed; right:100px; top:40%; z-index:99999;
     display:flex; flex-flow:column nowrap; align-items:flex-end; justify-content:center;
 }
 nav > a {margin-bottom:16px; display:flex; align-items:center;}
@@ -227,8 +227,8 @@ nav > a:last-child {margin-bottom:0;}
     background-color:rgba(0,0,0,0.1);
 }
 .swiper-slide .app_wrap .text .link > a:last-child {margin:0;}
-.swiper-slide .app_wrap .text .link > a > span {margin-left:8px; color:#0c0c0c; font-size:0.875rem;}
-.swiper-slide .app_wrap .text .link > a > span em {font-weight:600;}
+.swiper-slide .app_wrap .text .link > a > span {font-weight:600; margin-left:8px; color:#0c0c0c; font-size:0.875rem;}
+.swiper-slide .app_wrap .text .link > a > span em {font-weight:400;}
 /* graphic */
 .graphic {height:100vh; display:flex; justify-content:center; align-items:center; position:relative;}
 .graphic .big_bg {

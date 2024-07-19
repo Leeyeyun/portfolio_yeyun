@@ -42,7 +42,7 @@
     .contents .contents_wrap a:nth-child(3) .thum {height:80%; bottom:36px;}
     .contents .contents_wrap a:last-child .project_wrap video {left:0; width:100%;}
     /* web */
-    .web_wrap .text .link > a > span em {display:none;}
+    .web_wrap .text .link > a > span em, .swiper-slide .app_wrap .text .link > a > span em {display:none;}
     .web_wrap .website_link .title_link h2 {font-size:3.75rem;}
     /* app */
     .swiper-slide .app_wrap .text h1 {height:50px;}
