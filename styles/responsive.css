@@ -49,6 +49,7 @@
     .swiper-slide .app_wrap .text .info > p {font-size:0.875rem;}
     /* graphic */
     .graphic .detail p, .graphic .landing a {width:calc(100% - 200px);}
+    .graphic .big_bg .img {max-width:40vw;}
 }
 @media screen and (max-width:1060px){
     .profile .left .my_info .photo {height:180px;}
@@ -88,4 +89,5 @@
     /* graphic */
     .graphic .detail p, .graphic .landing a {width:calc(100% - 60px);}
     .graphic h2 {font-size:3rem;}
+    .graphic .big_bg .img {max-width:50%;}
 }
