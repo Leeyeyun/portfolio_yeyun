@@ -87,7 +87,7 @@
     #app #app_bg .eclipse {top:70%; transform:scale(2);}
     .swiper-slide .app_wrap .text .text_wrap {width:100%; padding-top:0;}
     .swiper-slide .app_wrap .text {
-        background-color:rgba(0,0,0,0.3); border-radius:15px; height:max-content; padding:36px 24px;
+        background-color:rgba(0,0,0,0.4); border-radius:15px; height:max-content; padding:36px 24px;
     }
     /* graphic */
     .graphic .detail p, .graphic .landing a {width:calc(100% - 60px);}
@@ -102,6 +102,7 @@
     .web_wrap .text .link > a:last-child {margin:0;}
     .graphic h2 {font-size:1.5rem; margin:120px 0 16px;}
     .contact {height:max-content; padding:36px 0;}
+    #app {height:max-content;}
     .swiper-slide .app_wrap .text h1 {height:40px;}
     .ux2 > .app_wrap .text h1 {height:50px;}
     .ux1 .app_wrap .thum {left:-20px;}
