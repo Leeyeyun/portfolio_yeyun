@@ -8,6 +8,11 @@
     .contents .contents_wrap a > p span {font-size:1.313rem; transform:translateY(-16px);}
     .contents .contents_wrap a {padding:16px 32px;}
     .contents .contents_wrap a > p em {font-size:4rem;}
+    /* web */
+    .web_wrap .text h1 {font-size:3.125rem;}
+    .web_wrap .text .info > p, .web_wrap .text .info > p span, .web_wrap .text .overview {font-size:0.875rem;}
+    .web_wrap .text {padding:0 36px;}
+    .web_wrap .text .text_wrap {width:100%;}
 }
 @media screen and (max-width:1260px){
     /* profile */
@@ -36,6 +41,14 @@
     .contents .contents_wrap a:nth-child(2) .thum {height:80%;}
     .contents .contents_wrap a:nth-child(3) .thum {height:80%; bottom:36px;}
     .contents .contents_wrap a:last-child .project_wrap video {left:0; width:100%;}
+    /* web */
+    .web_wrap .text .link > a > span em {display:none;}
+    .web_wrap .website_link .title_link h2 {font-size:3.75rem;}
+    /* app */
+    .swiper-slide .app_wrap .text h1 {height:50px;}
+    .swiper-slide .app_wrap .text .info > p {font-size:0.875rem;}
+    /* graphic */
+    .graphic .detail p, .graphic .landing a {width:calc(100% - 200px);}
 }
 @media screen and (max-width:1060px){
     .profile .left .my_info .photo {height:180px;}
@@ -43,6 +56,12 @@
     .profile .left .my_info .text > * {font-size:0.875rem; width:145px;}
     .profile .left .my_info .text h1 {font-size:1.25rem;}
     .profile .left .logo_explain > p {font-size:1rem;}
+    /* web */
+    .web_wrap .text {width:calc(1060px * 0.45);}
+    .web_wrap .website_link {}
+    /* app */
+    .swiper-slide .app_wrap .text {width:60%;}
+    #app #app_bg .eclipse {top:50%;}
 }
 @media screen and (max-width:760px){
     nav > a {margin-bottom:14px;}
@@ -56,4 +75,17 @@
     .profile .right {height:max-content;}
     .profile .right > * {height:max-content; margin-bottom:36px;}
     .profile .right .list:nth-child(2) {margin-bottom:36px;}
+    /* web */
+    .web_wrap .text {width:100%;}
+    .web_wrap .website_link {display:none;}
+    /* app */
+    .swiper-slide .app_wrap {padding:0 36px;}
+    .swiper-slide .app_wrap .text, .swiper-slide .app_wrap .thum {width:100%;}
+    .swiper-slide .app_wrap .thum {position:absolute; left:-40px;}
+    .ux2 .app_wrap .thum {left:20px;}
+    #app #app_bg .eclipse {top:70%; transform:scale(2);}
+    .swiper-slide .app_wrap .text .text_wrap {width:100%;}
+    /* graphic */
+    .graphic .detail p, .graphic .landing a {width:calc(100% - 60px);}
+    .graphic h2 {font-size:3rem;}
 }

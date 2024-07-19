@@ -72,7 +72,7 @@ for(let i of contents_a){
 
 //swiper ux
 const swiper1 = new Swiper('.ux-slide',{
-    autoplay:{},
+    /* autoplay:{}, */
     loop:true,
     speed:'500',
 })
@@ -120,7 +120,6 @@ big_bg.addEventListener('click',()=>{
 
 window.addEventListener('scroll',function(){
     var contents_top = contents.getBoundingClientRect().top;
-    console.log(contents_top)
     if(contents_top < 283 && contents_top > -528){//contents 위치 조건문
         nav.style.opacity = '0'
     }else {

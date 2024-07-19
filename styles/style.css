@@ -21,7 +21,7 @@ header .side .left p:last-child {display:none;}
 /* nav */
 nav {
     height:100%; opacity:0.6; transition:opacity 0.3s, filter 0.3s;
-    position:fixed; right:120px; bottom:0; z-index:99999;
+    position:fixed; right:100px; bottom:0; z-index:99999;
     display:flex; flex-flow:column nowrap; align-items:flex-end; justify-content:center;
 }
 nav > a {margin-bottom:16px; display:flex; align-items:center;}
@@ -142,14 +142,14 @@ nav > a:last-child {margin-bottom:0;}
 
 /* 3. web design - granhand */
 .web_wrap {display:flex; align-items:center; height:100vh;}
-.web_wrap .text {width:40%; height:100vh; display:flex; justify-content:center; align-items:center; background-color:#FDFBF4;}
+.web_wrap .text {width:45%; height:100vh; display:flex; justify-content:center; align-items:center; background-color:#FDFBF4;}
 .web_wrap .text .text_wrap {width:calc(100% - 240px); padding-top:36px;}
 .web_wrap .text > p:first-child {font-size:1.125rem; font-weight:500; color:#393939;}
 .web_wrap .text h1 {font-size:3.75rem; font-weight:700;}
 .web_wrap .text .info {margin:46px 0; color:#393939;}
 .web_wrap .text .info > p {margin-bottom:12px; font-weight:600; letter-spacing:-0.2px;}
 .web_wrap .text .info > p:last-child {margin-bottom:0;}
-.web_wrap .text .info > p span {width:105px; display:inline-block;}
+.web_wrap .text .info > p > span {width:105px; display:inline-block;}
 .web_wrap .text .overview {line-height:1.7; word-break:keep-all; color:#626262;}
 .web_wrap .text .link {margin-top:46px; display:flex; justify-content:flex-start;}
 .web_wrap .text .link > a {
@@ -161,8 +161,8 @@ nav > a:last-child {margin-bottom:0;}
     background-color:rgba(0,0,0,0.1);
 }
 .web_wrap .text .link > a:last-child {margin:0;}
-.web_wrap .text .link > a > span {margin-left:8px; color:#0c0c0c; font-size:0.875rem;}
-.web_wrap .text .link > a > span em {font-weight:600;}
+.web_wrap .text .link > a > span {margin-left:8px; color:#0c0c0c; font-size:0.875rem; font-weight:600; text-wrap:nowrap;}
+.web_wrap .text .link > a > span em {font-weight:400;}
 /* web-right */
 .web_wrap .website_link {width:60%; height:100vh; overflow:hidden; position:relative;}
 .web_wrap .website_link .bg {position:relative; display:flex; justify-content:center; align-items:flex-start; height:100vh;}
@@ -173,7 +173,7 @@ nav > a:last-child {margin-bottom:0;}
 .web_wrap .website_link .title_link {
     display:flex; flex-flow:column nowrap; align-items:center; justify-content:center;
     position:absolute; left:0; top:0; z-index:100; width:100%;
-    padding-top:370px;
+    padding-top:320px;
 }
 .web_wrap .website_link .title_link h2 {font-size:5rem; font-weight:700; color:#fff;}
 .web_wrap .website_link .title_link > a {
@@ -197,22 +197,27 @@ nav > a:last-child {margin-bottom:0;}
 
 /* 4. app design - triplens */
 #app {position:relative; height:100vh; overflow:hidden;}
-#app #app_bg {background-color:#3474EF; height:100vh; position:absolute; width:100vw;}
-#app #app_bg .eclipse {position:absolute; left:0; bottom:-16px; opacity:0.2;}
+#app #app_bg {text-align:center; background-color:#3474EF; height:100vh; position:absolute; width:100vw;}
+#app #app_bg .eclipse {position:relative; top:40%; opacity:0.2; transform:scale(-1.2);}
+#app #app_bg .eclipse > img {width:100%;}
 #app .ux-slide {}
 .swiper-slide .app_wrap {display:flex; align-items:center; height:100vh; position:relative; overflow:hidden;}
-.swiper-slide .app_wrap .thum {position:relative; z-index:50;}
-.swiper-slide .app_wrap .text {width:40%; height:100vh; display:flex; justify-content:center; align-items:center; position:relative; z-index:50;}
-.swiper-slide .app_wrap .text .text_wrap {width:calc(100% - 120px); padding-top:36px;}
+.swiper-slide .app_wrap .thum {position:relative; z-index:50; width:55%; left:-20px;}
+.ux2 .app_wrap .thum {left:30px;}
+.swiper-slide .app_wrap .thum > img {width:100%;}
+.swiper-slide .app_wrap .text {width:40%; height:100vh; display:flex; justify-content:flex-start; align-items:center; position:relative; z-index:50;}
+.swiper-slide .app_wrap .text .text_wrap {width:calc(100% - 120px); padding-top:50px;}
 .swiper-slide .app_wrap .text > p:first-child {font-size:1.125rem; font-weight:500; color:#fff;}
-.swiper-slide .app_wrap .text h1 {height:70px;}
+.swiper-slide .app_wrap .text h1 {height:60px;}
+.ux2 > .app_wrap .text h1 {height:70px;}
 .swiper-slide .app_wrap .text h1 img {height:100%;}
-.swiper-slide .app_wrap .text .info {margin:46px 0; color:#fff;}
+.swiper-slide .app_wrap .text .info {margin:36px 0; color:#fff;}
 .swiper-slide .app_wrap .text .info > p {margin-bottom:12px; font-weight:600; letter-spacing:-0.2px; display:flex; justify-content:flex-start; align-items:flex-start;}
 .swiper-slide .app_wrap .text .info > p:last-child {margin-bottom:0;}
-.swiper-slide .app_wrap .text .info > p .title {width:105px; display:inline-block; font-weight:300;}
-.swiper-slide .app_wrap .text .overview {line-height:1.7; word-break:keep-all; color:#EFEFEF; font-weight:100;}
-.swiper-slide .app_wrap .text .link {margin-top:46px; display:flex; justify-content:flex-start; filter:invert(1);}
+.swiper-slide .app_wrap .text .info > p .title {width:20%; display:inline-block; font-weight:300;}
+.swiper-slide .app_wrap .text .info > p .txt {width:80%; word-break:keep-all;}
+.swiper-slide .app_wrap .text .overview {font-size:0.875rem; line-height:1.7; word-break:keep-all; color:#EFEFEF; font-weight:100;}
+.swiper-slide .app_wrap .text .link {margin-top:36px; display:flex; justify-content:flex-start; filter:invert(1);}
 .swiper-slide .app_wrap .text .link > a {
     display:flex; align-items:center; margin-right:16px;
     padding:10px 16px; border-radius:30px; border:1px solid #0c0c0c;
