@@ -85,16 +85,25 @@
     .swiper-slide .app_wrap .thum {position:absolute; left:-40px;}
     .ux2 .app_wrap .thum {left:20px;}
     #app #app_bg .eclipse {top:70%; transform:scale(2);}
-    .swiper-slide .app_wrap .text .text_wrap {width:100%;}
+    .swiper-slide .app_wrap .text .text_wrap {width:100%; padding-top:0;}
+    .swiper-slide .app_wrap .text {
+        background-color:rgba(0,0,0,0.3); border-radius:15px; height:max-content; padding:36px 24px;
+    }
     /* graphic */
     .graphic .detail p, .graphic .landing a {width:calc(100% - 60px);}
     .graphic h2 {font-size:3rem;}
     .graphic .big_bg .img {max-width:50%;}
 }
-@media screen and (max-width:430px){
-    body {width:100vw; overflow-x:hidden;}
+@media screen and (max-width:420px){
+    body {width:100%; overflow-x:hidden;}
     .profile .left {padding:25px 0; width:100%;}
     .profile .left .my_info .photo {height:110px; margin-right:24px;}
-    .web_wrap .text .link > a {padding:6px 12px; margin-right:12px;}
+    .web_wrap .text .link > a {padding:6px 12px; margin-right:10px;}
     .web_wrap .text .link > a:last-child {margin:0;}
+    .graphic h2 {font-size:1.5rem; margin:120px 0 16px;}
+    .contact {height:max-content; padding:36px 0;}
+    .swiper-slide .app_wrap .text h1 {height:40px;}
+    .ux2 > .app_wrap .text h1 {height:50px;}
+    .ux1 .app_wrap .thum {left:-20px;}
+    .ux2 .app_wrap .thum {left:0;}
 }

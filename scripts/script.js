@@ -77,6 +77,7 @@ const swiper1 = new Swiper('.ux-slide',{
     speed:'500',
 })
 
+//app_bg 스와이프 될때 배경색 바뀌기
 const bg = document.querySelector('#app_bg');
 swiper1.on('slideChange',function(){
     /* console.log('change')
@@ -118,6 +119,7 @@ big_bg.addEventListener('click',()=>{
     document.body.style.overflow = '';
 })
 
+//페이지마다의 nav 디자인
 window.addEventListener('scroll',function(){
     var contents_top = contents.getBoundingClientRect().top;
     if(contents_top < 283 && contents_top > -528){//contents 위치 조건문
@@ -131,3 +133,7 @@ window.addEventListener('scroll',function(){
     }else {nav.style.filter = 'invert(1)'}
 
 })
+
+if (window.matchMedia("(max-width: 420px)").matches) {
+    nav.style.display = 'none'
+}else {nav.style.display = 'flex'}
